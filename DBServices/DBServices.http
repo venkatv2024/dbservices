@@ -1,0 +1,13 @@
+@DBServices_HostAddress = http://localhost:5242
+
+### Example: Call /runSP endpoint to execute a stored procedure
+POST {{DBServices_HostAddress}}/runSP
+Content-Type: application/json
+
+{
+  "spName": "YourStoredProcedureName",
+  "parameters": {
+    "@Param1": "Value1",
+    "@Param2": 123
+  }
+}
